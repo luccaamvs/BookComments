@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Sass</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__links"><a href="index.html" class="menu__link"><img src="assets/img/logo.png" alt="Logo" class="header__img"></a></li>
+                <li class="menu__links"><a href="about.html" class="menu__link">Livros</a></li>
+                <li class="menu__links"><a href="collection.html" class="menu__link">Autores</a></li>
+                <div class="input-group">
+                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                    <button type="button" class="btn btn-outline-primary">Procurar</button>
+                </div>
+                <li class="menu__links"><a href="collection.html" class="menu__link">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="main__content">
+            <article class="main__post">
+                <a href="article.html" class="main__title">Boas práticas da metodologia BEM</a>
+                <div class="main__subtitle">
+                    <p class="main__date">25/10/2021</p>
+                    <span class="main__tag">CSS</span>
+                </div>
+                <div class="main__details">
+                    <img src="assets/img/bem.jpg" alt="BEM" class="main__img" />
+                    <p class="main__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor mi dignissim libero elementum, sit amet rutrum quam feugiat. Nunc leo eros, tempor vel erat vel, tempus vestibulum mauris. Vivamus quis porta odio.</p>
+                    <a href="#" class="main__btn">Ler mais</a>
+                    <div class="main__info">
+                        <div class="main__author">
+                            <p class="main__p">by Lucca Bordin</p>
+                        </div>
+                        <div class="main__comments">
+                            <a href="#" class="main__a">5 comments</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <div class="main__sidebar sidebar">
+            <aside class="sidebar__top">
+                <p class="sidebar__title">Top posts</p>
+                <ul class="sidebar__posts">
+                    <li class="sidebar__list">
+                        <img src="assets/img/css-grids.jpg" alt="Grid" class="sidebar__img" />
+                        <div class="sidebar__details">
+                            <a href="article.html" class="sidebar__post-title">Projetos com CSS Grid</a>
+                            <p class="sidebar__post-date">20/10/2021</p>
+                        </div>
+                    </li>
+                    <li class="sidebar__list">
+                        <img src="assets/img/javascript.png" alt="JS" class="sidebar__img" />
+                        <div class="sidebar__details">
+                            <a href="article.html" class="sidebar__post-title">Iniciando com JavaScript: Primeiros Passos</a>
+                            <p class="sidebar__post-date">20/09/2021</p>
+                        </div>
+                    </li>
+                    <li class="sidebar__list">
+                        <img src="assets/img/sass.jpg" alt="SCSS" class="sidebar__img" />
+                            <div class="sidebar__details">
+                                <a href="article.html" class="sidebar__post-title">Tudo sobre SCSS</a>
+                                <p class="sidebar__post-date">20/08/2021</p>
+                            </div>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        
+        <p class="footer__txt">BookComments <img src="assets/img/footer-logo.png" alt="Footer logo" class="footer__logo" /></p>
+    </footer>
+    
+</body>
+</html>
